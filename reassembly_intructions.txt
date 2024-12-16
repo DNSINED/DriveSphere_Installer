@@ -1,0 +1,38 @@
+1. Reassembly Using 7-Zip
+If your files are split using 7-Zip (e.g., myfile.zip.001, myfile.zip.002):
+
+Install 7-Zip: Download and install it from 7-Zip's official website.
+Ensure all parts are in the same folder.
+Right-click on the first file (myfile.zip.001).
+Choose 7-Zip > Extract Here or Extract to "myfile/".
+7-Zip will automatically locate and combine the other parts.
+The original file (e.g., myfile.zip or myfile.exe) will be extracted.
+
+2. Reassembly Using WinRAR
+If your files are split using WinRAR (e.g., myfile.part1.rar, myfile.part2.rar):
+
+Install WinRAR: Download and install it from WinRAR's official website.
+Ensure all parts are in the same folder.
+Right-click on the first file (myfile.part1.rar).
+Choose Extract Here or Extract to "myfile/".
+WinRAR will automatically combine the parts and extract the original file.
+
+3. Reassembly Using Command Prompt for Split Files
+If your files are split using split (e.g., part_aa, part_ab):
+
+Open Command Prompt:
+Press Win + R, type cmd, and press Enter.
+Navigate to the folder containing the split files:
+cmd
+Copy code
+cd path\to\your\folder
+Use the copy command to merge the parts:
+cmd
+Copy code
+copy /b part_aa+part_ab+part_ac myfile.zip
+Extract the merged .zip file using 7-Zip or WinRAR.
+
+Important Notes:
+Ensure File Order: Ensure the parts are named sequentially and located in the same directory before attempting reassembly.
+If the file is .zip, users need an archive tool (7-Zip or WinRAR) to extract it after reassembly.
+If the file is .exe, users can directly run it after reassembly.
